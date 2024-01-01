@@ -1,6 +1,6 @@
 # Input Leap nix
 
-This [Input Leap](https://github.com/input-leap/input-leap) packaged with [nix](https://nixos.org/explore)
+This is [Input Leap](https://github.com/input-leap/input-leap) packaged with [nix](https://nixos.org/explore)
 
 This has successfully been run on the following configurations:
 
