@@ -1,0 +1,26 @@
+diff --git a/src/gui/src/MainWindow.cpp b/src/gui/src/MainWindow.cpp
+index 59523361..239649fe 100644
+--- a/src/gui/src/MainWindow.cpp
++++ b/src/gui/src/MainWindow.cpp
+@@ -1361,7 +1361,7 @@ void MainWindow::promptAutoConfig()
+     m_AppConfig->setAutoConfigPrompted(true);
+ }
+ 
+-void MainWindow::on_m_pComboServerList_currentIndexChanged(QString )
++void MainWindow::on_m_pComboServerList_currentIndexChanged(int _)
+ {
+     if (m_pComboServerList->count() != 0) {
+         restart_cmd_app();
+diff --git a/src/gui/src/MainWindow.h b/src/gui/src/MainWindow.h
+index 5f37c0b7..03343785 100644
+--- a/src/gui/src/MainWindow.h
++++ b/src/gui/src/MainWindow.h
+@@ -191,7 +191,7 @@ public slots:
+ 
+ private slots:
+     void on_m_pCheckBoxAutoConfig_toggled(bool checked);
+-    void on_m_pComboServerList_currentIndexChanged(QString );
++    void on_m_pComboServerList_currentIndexChanged(int _);
+     void on_m_pButtonReload_clicked();
+     void installBonjour();
+ 
